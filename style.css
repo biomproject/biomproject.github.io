@@ -1,0 +1,49 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    overflow: hidden;
+    background-color: white;
+    font-size: 36px;
+    color: blue;
+    user-select: none;
+  }
+  
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link:hover {
+    color: red;
+  }
+  
+  #blobs {
+    -webkit-filter: url("#goo");
+            filter: url("#goo");
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .blob {
+    position: absolute;
+    background: blue;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-left: -50px;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 4s;
+  }
+  
